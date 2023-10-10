@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CodePen - Popular Products Section Using HTML , CSS , Bootstrap</title>
+	<link rel="stylesheet" href="style.css">
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
+
+
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link rel='stylesheet' href='./bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='./fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css'>
+	<link rel="stylesheet" href="./styleForAllProductsPage.css">
+
+</head>
+
+<body>
+	<header class="">
+		<a href="./index.html" class="logo">
+			<h1 style="color:#2c2c2c ;">E-commerce</h1>
+		</a>
+
+		<ul class="navmenu">
+			<li><a href="./index.html">home</a></li>
+			<li><a href="#">shop</a></li>
+			<li><a href="#">products</a></li>
+			<li><a href="#">page</a></li>
+			<li><a href="#">Docs</a></li>
+		</ul>
+
+		<div class="nav-icon">
+			<i style="cursor: pointer;" onclick="signOut();" class='bx bx-user'></i>
+			<a href="./cart.html"><i class="bx bx-cart"></i></a>
+
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
+
+	<!-- partial:index.partial.html -->
+	<section class="section-products">
+		<div class="container">
+			<div class="row justify-content-center text-center">
+				<div class="col-md-8 col-lg-6">
+					<div class="p-2">
+						<h2>search for product</h2>
+					</div>
+					<div class="py-4 d-flex text-center">
+						<input onkeyup="searchData(this.value)" id="searchInput" class="form-control" type="text"
+							placeholder="Default input" aria-label="type product name here">
+						<input type="button" class="btn btn-info m-2" onclick="filterByLowesPrice()"
+							value="sort by price" onc>
+					</div>
+				</div>
+			</div>
+			<div id="row" class="row">
+
+			</div>
+		</div>
+	</section>
+	<!-- partial -->
+	<script src="script.js"></script>
+	<script src="./mainScript.js"></script>
+</body>
+
+</html>

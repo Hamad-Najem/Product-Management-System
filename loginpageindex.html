@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginpagestyle.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Login</h2>
+            <p>Already hava an account? login or <a href="signuppageindex.html"><span style="color:blue ;">Sign UP</span></a> </p>
+        </div>
+        <form id="form" class="form" onsubmit="checKFormData(event);" method="get" action="./index.html">
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input onchange="cehckIfEmailExixts()"  type="email" placeholder="a@gmail.com" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Password</label>
+                <input type="password" placeholder="Enter Password" id="password"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button type="submit" value="Sign In" style="cursor:pointer;">Sing In</button>
+        </form>
+    </div>
+    <script src="./scriptForSignIn.js"></script>
+</body>
+</html>

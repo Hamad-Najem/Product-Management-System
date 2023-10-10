@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signuppagestyle.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Sign Up</h2>
+            <p>Already hava an account? Sign UP or <a href="loginpageindex.html"><span style="color:blue ;">Login</span></a> </p>
+        </div>
+        <form id="form" class="form" onsubmit="checkFormData(event)" method="get" action="./index.html">
+            <div class="form-control">
+                <label for="name">Username</label>
+                <input onchange="nameValidity(this.value)" pattern="^[a-zA-Z0-9_]{3,15}$" required type="text" placeholder="alibob17" id="name" name="name" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="ahmed@gmail.com" id="email" name="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" onchange="checkPasswordComplixty(this.value),checkPasswordAndRpassword()" placeholder="Enter Password" id="password" required/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="rpassword">Repeat Password</label>
+                <input type="rpassword" placeholder="Enter Password again" onchange="checkPasswordAndRpassword()" id="rpassword" name="rpassword" required/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button style="cursor: pointer;">Sign Up</button>
+        </form>
+    </div>
+    <script src="./scriptForSignUp.js"></script>
+</body>
+</html>

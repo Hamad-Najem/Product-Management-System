@@ -1,0 +1,95 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "name": "product 1",
+        "description": "This is the first product.",
+        "image": "./image/1.jpg",
+        "price": 10.99
+      },
+      {
+        "id": 2,
+        "name": "product 2",
+        "description": "This is the second product.",
+        "image": "./image/2.jpg",
+        "price": 19.99
+      },
+      {
+        "id": 3,
+        "name": "product 3",
+        "description": "This is the third product.",
+        "image": "./image/3.jpg",
+        "price": 5.99
+      },
+      {
+        "id": 4,
+        "name": "product 4",
+        "description": "This is the fourth product.",
+        "image": "./image/4.jpg",
+        "price": 29.99
+      },
+      {
+        "id": 5,
+        "name": "product 5",
+        "description": "This is the fifth product.",
+        "image": "./image/5.jpg",
+        "price": 12.99
+      },
+      {
+        "id": 6,
+        "name": "product 6",
+        "description": "This is the sixth product.",
+        "image": "./image/6.jpg",
+        "price": 9.99
+      },
+      {
+        "id": 7,
+        "name": "product 7",
+        "description": "This is the seventh product.",
+        "image": "./image/7.jpg",
+        "price": 24.99
+      },
+      {
+        "id": 8,
+        "name": "product 8",
+        "description": "This is the eighth product.",
+        "image": "./image/8.jpg",
+        "price": 15.99
+      },
+      {
+        "id": 9,
+        "name": "product 9",
+        "description": "This is the ninth product.",
+        "image": "./image/1.jpg",
+        "price": 18.99
+      },
+      {
+        "id": 10,
+        "name": "product 10",
+        "description": "This is the tenth product.",
+        "image": "./image/2.jpg",
+        "price": 7.99
+      },
+      {
+        "id": 11,
+        "name": "sweet shirt",
+        "description": "This is the tenth product.",
+        "image": "./image/3.jpg",
+        "price": 9.99
+      },
+      {
+        "id": 12,
+        "name": "cotton shirt",
+        "description": "This is the tenth product.",
+        "image": "./image/4.jpg",
+        "price": 12.5
+      },
+      {
+        "id": 13,
+        "name": "cotton hodie",
+        "description": "This is the tenth product.",
+        "image": "./image/5.jpg",
+        "price": 8.99
+      }
+    ]
+  }
